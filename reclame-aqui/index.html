@@ -11,8 +11,8 @@
   <header class="header">
     <img src="./images/reclame-aqui-logo.png" alt="logo reclame aqui" class="logo">
     <input type="text" class="search-area" placeholder="Pesquise por nome, cnpj ou site da empresa">
-    <button class="header-btn register">Cadastrar</button>
-    <button class="header-btn login">Fazer Login</button>
+    <button class="button register">Cadastrar</button>
+    <button class="button login">Fazer Login</button>
   </header>
   <main>
     <section class="main-text">
@@ -35,32 +35,36 @@
         <label for="name" class="text-label"><span class="asterisk">*</span> Nome e sobrenome (Conforme escrito no seu CPF)</label>
         <input type="text" class="input-style" id="name" placeholder="Digite seu nome e sobrenome">
       </div>
+      
+      <div class="container-flex">
+        <div class="container-input container-3">
+          <label for="cpf" class="text-label"><span class="asterisk">*</span> CPF</label>
+          <input type="text" class="input-style" id="cpf" placeholder="___.___.___-__">
+        </div>
 
-      <div class="container-input">
-        <label for="cpf" class="text-label"><span class="asterisk">*</span> CPF</label>
-        <input type="text" class="input-style" id="cpf" placeholder="___.___.___-__">
+        <div class="container-input container-3">
+          <label for="birth-date" class="text-label"><span class="asterisk">*</span> Data de Nascimento</label>
+          <input type="date" class="input-style" id="birth-date" placeholder="__/__/____">
+        </div>
+
+        <div class="container-input">
+          <p class="text-label"><span class="asterisk">*</span> Gênero</p>
+          <div class="all-radio-container">
+            <div class="radio-container">
+              <input type="radio" id="male" name="sex">
+              <label for="male">Masculino</label>
+            </div>
+            <div class="radio-container">
+              <input type="radio" id="female" name="sex">
+              <label for="female">Feminino</label>
+            </div>
+            <div class="radio-container">
+              <input type="radio" id="other" name="sex">
+              <label for="other">Outro</label>
+            </div>
+          </div>
       </div>
 
-      <div class="container-input">
-        <label for="birth-date" class="text-label"><span class="asterisk">*</span> Data de Nascimento</label>
-        <input type="date" class="input-style" id="birth-date" placeholder="__/__/____">
-      </div>
-
-      <div class="container-input">
-        <p class="text-label"><span class="asterisk">*</span> Gênero</p>
-
-        <div>
-          <input type="radio" id="male">
-          <label for="male">Masculino</label>
-        </div>
-        <div>
-          <input type="radio" id="female">
-          <label for="female">Feminino</label>
-        </div>
-        <div>
-          <input type="radio" id="other">
-          <label for="other">Outro</label>
-        </div>
       </div>
 
       <div class="container-input">
@@ -99,11 +103,13 @@
         <input type="number" class="input-style" id="cel" placeholder="( )">
       </div>
 
-      <div>
+      <div class="checkbox-div">
         <input type="checkbox" id="check-whatsapp">
-        <label for="check-whatsapp">Eu aceito receber atualizações do Reclame AQUI pelo WhatsApp</label>
-        <p>Fique tranquilo, nunca enviaremos propaganda para seu número</p>
-      </div>
+        <div class="checkbox-text-align">
+          <label for="check-whatsapp" class="checkbox">Eu aceito receber atualizações do Reclame AQUI pelo WhatsApp</label>
+          <p>Fique tranquilo, nunca enviaremos propaganda para seu número</p>
+        </div>
+        </div>
 
       <div class="container-input">
         <label for="password" class="text-label"><span class="asterisk">*</span> Crie uma senha</label>
@@ -115,13 +121,14 @@
         <input type="password" class="input-style" id="confirm-password" placeholder="Digite a senha novamente">
       </div>
 
-      <div>
+      <div class="checkbox-term">
         <input type="checkbox" id="policy">
         <label for="policy">Li e concordo com os Política de Privacidade</label>
         <br>
         <input type="checkbox" id="use-term">
         <label for="use-term">Li e concordo com os Termos de Uso do Reclame AQUI</label>
-        <button>Cadastrar</button>
+        <br>
+        <button disabled id="last-btn" class="button last-btn">Cadastrar</button>
       </div>
 
     </form>

@@ -26,7 +26,7 @@
   background-color: rgb(238, 236, 236);
 }
 
-.header-btn {
+.button {
   padding: 7px;
   margin: 5px;
   height: 40px;
@@ -51,7 +51,7 @@
 }
 
 main {
-  width: 80%;
+  width: 70%;
   margin: 0 auto;
 }
 .main-text {
@@ -104,8 +104,54 @@ main {
 
 .container-input {
   margin-top: 20px;
+  margin-right: 20px;
 }
 
 .text-label{
   font-weight: bold;
+}
+
+.container-flex {
+  display: flex;
+  justify-content: space-between;
+}
+
+.container-3 {
+  width: 30%;
+}
+
+.all-radio-container{
+  display: flex;
+}
+
+.radio-container {
+  margin-top: 5px;
+  border: 1px solid lightgray;
+  border-radius: 5px;
+  padding: 8px;
+  display: flex;
+  margin-right: 2px;
+}
+
+.checkbox-div {
+  margin-top: 20px;
+  display: flex;
+}
+
+.checkbox {
+  font-weight: bold;
+}
+
+.checkbox-text-align {
+  margin-left: 10px;
+}
+
+.checkbox-term {
+  margin-top: 20px;
+  text-align: center;
+}
+
+.last-btn {
+  border: 1px solid lightgray;
+  margin-top: 20px;
 }
