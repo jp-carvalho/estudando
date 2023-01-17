@@ -8,7 +8,114 @@
   <title>Document</title>
 </head>
 <body>
-  
+  <header class="header">
+    <img src="./images/reclame-aqui-logo.png" alt="logo reclame aqui" class="logo">
+    <input type="text" class="search-area" placeholder="Pesquise por nome, cnpj ou site da empresa">
+    <button class="header-btn register">Cadastrar</button>
+    <button class="header-btn login">Fazer Login</button>
+  </header>
+  <main>
+    <section class="main-text">
+      <h1>Olá, crie uma conta no Reclame AQUI</h1>  
+      <h3>Com você logado conseguimos oferecer um serviço melhor e mais personalizado. Navegue logado e ajude outros milhões de consumidores.</h5>
+    </section>
+    <div class="main-form">
+      <h4>Preencha o formulário abaixo * Todos os campos são obrigatórios</h4>
+    </div>
+    <form action="#">
+      <p>Dados pessoais</p>
+      <div>
+        <label for="name"><span class="asterisk">*</span> Nome e sobrenome (Conforme escrito no seu CPF)</label>
+        <input type="text" id="name" placeholder="Digite seu nome e sobrenome">
+      </div>
+
+      <div>
+        <label for="cpf"><span class="asterisk">*</span> CPF</label>
+        <input type="text" id="cpf" placeholder="___.___.___-__">
+      </div>
+
+      <div>
+        <label for="birth-date"><span class="asterisk">*</span> Data de Nascimento</label>
+        <input type="date" id="birth-date" placeholder="__/__/____">
+      </div>
+
+      <div>
+        <p><span class="asterisk">*</span> Gênero</p>
+
+        <div>
+          <input type="radio" id="male">
+          <label for="male">Masculino</label>
+        </div>
+        <div>
+          <input type="radio" id="female">
+          <label for="female">Feminino</label>
+        </div>
+        <div>
+          <input type="radio" id="other">
+          <label for="other">Outro</label>
+        </div>
+      </div>
+
+      <div>
+        <label for="state" id="state"><span class="asterisk">*</span> Estado</label>
+        <select name="state" id="state">
+          <option value="AC">Acre</option>
+          <option value="AL">Alagoas</option>
+          <option value="AP">Amapá</option>
+          <option value="AM">Amazonas</option>
+          <option value="BA">Bahia</option>
+          <option value="CE">Ceará</option>
+          <option value="ES">Espirito Santo</option>
+          <option value="GO">Goiás</option>
+        </select>
+      </div>
+
+      <div>
+        <label for="city"><span class="asterisk">*</span> Cidade</label>
+        <input type="text" id="city" placeholder="Cidade">
+      </div>
+
+      <div>
+        <p>Dados de acesso</p>
+      </div>
+
+      <div>
+        <label for="email"><span class="asterisk">*</span> Email</label>
+        <input type="email" id="email" placeholder="Digite o seu email">
+      </div>
+
+      <div>
+        <label for="cel"><span class="asterisk">*</span> Celular</label>
+        <input type="number" id="cel" placeholder="( )">
+      </div>
+
+      <div>
+        <input type="checkbox" id="check-whatsapp">
+        <label for="check-whatsapp">Eu aceito receber atualizações do Reclame AQUI pelo WhatsApp</label>
+        <p>Fique tranquilo, nunca enviaremos propaganda para seu número</p>
+      </div>
+
+      <div>
+        <label for="password"><span class="asterisk">*</span> Crie uma senha</label>
+        <input type="password" id="password" placeholder="Digite uma senha">
+      </div>
+
+      <div>
+        <label for="confirm-password"><span class="asterisk">*</span> Confirmar senha</label>
+        <input type="password" id="confirm-password" placeholder="Digite a senha novamente">
+      </div>
+
+      <div>
+        <input type="checkbox" id="policy">
+        <label for="policy">Li e concordo com os Política de Privacidade</label>
+        <br>
+        <input type="checkbox" id="use-term">
+        <label for="use-term">Li e concordo com os Termos de Uso do Reclame AQUI</label>
+        <button>Cadastrar</button>
+      </div>
+
+    </form>
+  </main>
   <script src="./script.js"></script>
 </body>
 </html>
